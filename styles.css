@@ -9,12 +9,63 @@ h1 {
   line-height: 1.5;
   text-align: center;
   font-family: "Henny Penny", cursive;
+  border-bottom: #e706b6 4px dotted;
+  padding-bottom: 15px;
 }
 
+form {
+  padding: 20px;
+  display: flex;
+}
+
+main {
+  margin-bottom: 30px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+a {
+  color: #e706b6;
+}
 .container {
   margin: 120px auto;
   max-width: 800px;
   background-color: white;
   border-radius: 20px;
   padding: 30px 20px;
+}
+
+.prompt {
+  padding: 10px;
+  width: 40%;
+  border: 1px solid #e706b6;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #e706b6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.submit-button:hover {
+  background: #f3d7ed;
+  color: #e706b6;
+}
+
+.poem {
+  padding: 20px;
+  font-family: "Henny Penny", cursive;
+  font-size: 25px;
+  line-height: 1.5;
+  border-left: #e706b6 4px dotted;
 }
