@@ -8,17 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
     <header>
     <h1>Welcome to my poem generator!</h1></header>
     <main>
-<form>
-  <input type="text" placeholder="Enter a poem topic or keyword" autofocus required autocomplete="off" class="prompt">
-  <input type="submit" value="Generate Poem" class="submit-button"> 
+<form id="poem-generator">
+  <input type="text" placeholder="Enter a poem topic or keyword" autofocus required autocomplete="off" class="prompt" id="poem-prompt">
+  <input type="submit" value="Generate Poem" class="submit-button" id="submit-poem"> 
 </form>
- <div class="poem">
+ <div class="poem" id="poem">
     The poem will go here
   </div>
 
