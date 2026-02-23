@@ -1,0 +1,20 @@
+body {
+  background: #f3d7ed;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 45px;
+  color: #e706b6;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Henny Penny", cursive;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+}
