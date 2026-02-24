@@ -1,4 +1,5 @@
 function displayPoem(response) {
+  document.querySelector("#poem").classList.remove("blink");
   new Typewriter("#poem", {
     strings: [`${response.data.answer}`],
     autoStart: true,
@@ -8,6 +9,8 @@ function displayPoem(response) {
 
 function generatePoem(event) {
   event.preventDefault();
+
+  document.querySelector("#poem").classList.remove("blink");
 
   let apiKey = "357affaact442eeoc3f4199173062fb9";
   let poemSubject = document.querySelector("#poem-prompt");
@@ -19,7 +22,7 @@ function generatePoem(event) {
   axios.get(apiUrl).then(displayPoem);
 
   new Typewriter("#poem", {
-    strings: ["Generating poem..."],
+    strings: [`Generating poem about ${prompt}`],
     autoStart: true,
     cursor: "",
   });

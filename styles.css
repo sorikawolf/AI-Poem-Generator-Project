@@ -37,6 +37,7 @@ a {
   background-color: white;
   border-radius: 20px;
   padding: 30px 20px;
+  box-shadow: 10px 5px 20px rgba(215, 18, 195, 0.5);
 }
 
 .prompt {
@@ -68,4 +69,13 @@ a {
   font-size: 30px;
   line-height: 1.5;
   border-left: #e706b6 4px dotted;
+}
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
